@@ -9,5 +9,5 @@ https://crackstation.net/
 ### oscp-prep
 https://github.com/camercu/oscp-prep
 
-### oscp-prep/CHEATSHEET.md
+### CHEATSHEET.md
 https://github.com/camercu/oscp-prep/blob/main/CHEATSHEET.md
