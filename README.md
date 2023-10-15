@@ -18,4 +18,6 @@ https://github.com/camercu/oscp-prep/blob/main/CHEATSHEET.md
 https://github.com/0xsyr0/OSCP
 
 ## HTB like
+
+### Hack The Box (HTB) OSCP-Like machines List 2022
 https://pentestblog.in/oscp/hack-the-box-htb-oscp-like-machines-list-2022/
