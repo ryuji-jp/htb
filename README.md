@@ -5,3 +5,6 @@ https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20an
 
 ### Free Password Hash Cracker
 https://crackstation.net/
+
+### oscp-prep
+https://github.com/camercu/oscp-prep
