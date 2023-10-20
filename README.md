@@ -14,6 +14,11 @@ https://crackstation.net/
  nmap -sC -sV -O -v -oV 10.10.10.17
 ```
 
+### WordPress
+```
+wpscan --url https://brainfuck.htb --disable-tls-checks
+```
+
 ## oscp-prep 
 https://github.com/camercu/oscp-prep
 
