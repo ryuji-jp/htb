@@ -1,15 +1,15 @@
 # Document
 
-### Reverse Shell Cheat Sheet
+## Reverse Shell Cheat Sheet
 https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md
 
-### Free Password Hash Cracker
+## Free Password Hash Cracker
 https://crackstation.net/
 
-## Cheat Sheet
+# Cheat Sheet
 
-### My Cheat Sheet
-nmap
+## My Cheat Sheet
+### nmap
 ```
  nmap -sC -sV -O -v -oV 10.10.10.17
 ```
@@ -17,16 +17,16 @@ nmap
 ### oscp-prep 
 https://github.com/camercu/oscp-prep
 
-### CHEATSHEET.md
+## CHEATSHEET.md
 https://github.com/camercu/oscp-prep/blob/main/CHEATSHEET.md
 
-### OSCP Cheat Sheet
+## OSCP Cheat Sheet
 https://github.com/0xsyr0/OSCP
 
-## HTB like
+# HTB like
 
-### Hack The Box (HTB) OSCP-Like machines List 2022
+## Hack The Box (HTB) OSCP-Like machines List 2022
 https://pentestblog.in/oscp/hack-the-box-htb-oscp-like-machines-list-2022/
 
-### HACKTHEBOX VM LIST
+## HACKTHEBOX VM LIST
 https://docs.google.com/spreadsheets/u/1/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/htmlview?pli=1#
