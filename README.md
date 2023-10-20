@@ -8,7 +8,13 @@ https://crackstation.net/
 
 ## Cheat Sheet
 
-### oscp-prep <<<<< main
+### My Cheat Sheet
+nmap
+```
+ nmap -sC -sV -O -v -oV 10.10.10.17
+```
+
+### oscp-prep 
 https://github.com/camercu/oscp-prep
 
 ### CHEATSHEET.md
