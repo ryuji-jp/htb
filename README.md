@@ -29,9 +29,15 @@ searchsploit wordpress plugin wp support
 searchsploit -x 41006.txt
 ```
 
-### username 列挙
+### Word Press username 列挙
 ```
 wpscan --url https://brainfuck.htb --disable-tls-checks --enumerate u
+```
+
+### Word Press admin page
+
+```
+https://brainfuck.htb/wp-admin/
 ```
 
 ## oscp-prep 
