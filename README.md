@@ -23,6 +23,8 @@ wpscan --url https://brainfuck.htb --disable-tls-checks
 searchsploit wordpress plugin wp support
 ```
 
+### searchsploit exploit code download
+
 ```
 searchsploit -x 41006.txt
 ```
