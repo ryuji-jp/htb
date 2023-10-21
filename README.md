@@ -23,6 +23,10 @@ wpscan --url https://brainfuck.htb --disable-tls-checks
 searchsploit wordpress plugin wp support
 ```
 
+```
+searchsploit -x 41006.txt
+```
+
 ## oscp-prep 
 https://github.com/camercu/oscp-prep
 
