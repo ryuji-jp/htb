@@ -23,10 +23,15 @@ wpscan --url https://brainfuck.htb --disable-tls-checks
 searchsploit wordpress plugin wp support
 ```
 
-### searchsploit exploit code download
+### searchsploit 詳細表示
 
 ```
 searchsploit -x 41006.txt
+```
+
+### username 列挙
+```
+wpscan --url https://brainfuck.htb --disable-tls-checks --enumerate u
 ```
 
 ## oscp-prep 
