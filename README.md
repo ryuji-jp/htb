@@ -10,12 +10,17 @@ https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20an
 
 ### nmap
 ```
- nmap -sC -sV -O -v -oV 10.10.10.17
+nmap -sC -sV -O -v -oV 10.10.10.17
 ```
 
 ### WordPress
 ```
 wpscan --url https://brainfuck.htb --disable-tls-checks
+```
+
+### searchsploit
+```
+searchsploit wordpress plugin wp support
 ```
 
 ## oscp-prep 
