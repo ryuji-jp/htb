@@ -14,15 +14,14 @@ nmap -sC -sV -O -v -oV 10.10.10.17
 ```
 gobuster dir -u http://shocker.htb/ -w /usr/share/wordlists/dirb/common.txt
 ```
+```
+feroxbuster -u http://shocker.htb -f -n
+feroxbuster -u http://shocker.htb/cgi-bin/ -x sh,cgi,pl
+```
 
 ### WordPress
 ```
 wpscan --url https://brainfuck.htb --disable-tls-checks
-```
-
-### searchsploit
-```
-searchsploit wordpress plugin wp support
 ```
 
 ### searchsploit 詳細表示
@@ -40,4 +39,11 @@ wpscan --url https://brainfuck.htb --disable-tls-checks --enumerate u
 
 ```
 https://brainfuck.htb/wp-admin/
+```
+
+## exploit code 
+
+### searchsploit
+```
+searchsploit wordpress plugin wp support
 ```
