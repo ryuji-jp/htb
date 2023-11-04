@@ -12,6 +12,10 @@ https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20an
 ```
 nmap -sC -sV -O -v -oV 10.10.10.17
 ```
+### http 探索
+```
+gobuster dir -u http://shocker.htb/ -w /usr/share/wordlists/dirb/common.txt
+```
 
 ### WordPress
 ```
