@@ -18,6 +18,9 @@ gobuster dir -u http://shocker.htb/ -w /usr/share/wordlists/dirb/common.txt
 feroxbuster -u http://shocker.htb -f -n
 feroxbuster -u http://shocker.htb/cgi-bin/ -x sh,cgi,pl
 ```
+```
+dirb http://10.10.10.56/cgi-bin/ -X .sh,.pl,.txt,.php,.py
+```
 
 ### WordPress
 ```
