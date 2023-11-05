@@ -8,6 +8,10 @@
 nmap -sC -sV -O -v -oV 10.10.10.17
 ```
 
+### nmap tips
+
+https://muchipopo.com/ctf/cheatsheet-oscp/
+
 ## http/https 
 
 ### http 探索
