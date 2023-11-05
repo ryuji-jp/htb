@@ -63,3 +63,8 @@ sudo perl -e 'exec "/bin/sh";'
 whoami
 root
 ```
+
+## Tips
+
+### AutoRecon
+https://github.com/Tib3rius/AutoRecon
