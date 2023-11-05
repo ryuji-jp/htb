@@ -28,3 +28,6 @@ https://docs.google.com/spreadsheets/u/1/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBn
 
 ## Free Password Hash Cracker
 https://crackstation.net/
+
+## Reverse Shell Cheat Sheet
+https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md#bash-tcp
