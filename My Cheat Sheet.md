@@ -56,14 +56,14 @@ searchsploit wordpress plugin wp support
 ```
 
 ### sudo -l
-
+root 権限で実行できるファイルが確認できる
 ```
 $ sudo -l
 Matching Defaults entries for nibbler on Nibbles:
     env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
 
 User nibbler may run the following commands on Nibbles:
-    (root) NOPASSWD: /home/nibbler/personal/stuff/monitor.sh
+    (root) NOPASSWD: /home/nibbler/personal/stuff/monitor.sh <<<<< HERE
 ```
 
 ## root 権限
