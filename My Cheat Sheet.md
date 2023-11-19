@@ -55,6 +55,17 @@ https://brainfuck.htb/wp-admin/
 searchsploit wordpress plugin wp support
 ```
 
+### sudo -l
+
+```
+$ sudo -l
+Matching Defaults entries for nibbler on Nibbles:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User nibbler may run the following commands on Nibbles:
+    (root) NOPASSWD: /home/nibbler/personal/stuff/monitor.sh
+```
+
 ## root 権限
 https://gtfobins.github.io/gtfobins/perl/
 ```
