@@ -16,8 +16,9 @@ https://muchipopo.com/ctf/cheatsheet-oscp/
 ```
 ┌──(kali㉿kali)-[~/Documents/Beep]
 └─$ python3 ../AutoRecon/autorecon.py 10.10.10.7 
-
 ```
+
+https://github.com/Tib3rius/AutoRecon
 
 ## http/https 
 
