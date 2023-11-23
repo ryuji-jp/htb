@@ -22,7 +22,7 @@ https://github.com/Tib3rius/AutoRecon
 
 ### ssh
 ssh でエラーが出る場合  
-/etc/ssh/ssh_config  
+```/etc/ssh/ssh_config```  
 
 ```
 HOST *
