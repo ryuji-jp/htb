@@ -84,6 +84,10 @@ searchsploit wordpress plugin wp support
 ```
 searchsploit -x 41006.txt
 ```
+### searchsploit Download
+```
+searchsploit -m 37637
+```
 
 ### sudo -l
 root 権限で実行できるファイルが確認できる
