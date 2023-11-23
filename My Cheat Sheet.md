@@ -26,6 +26,9 @@ https://github.com/Tib3rius/AutoRecon
 ```
 gobuster dir -u http://shocker.htb/ -w /usr/share/wordlists/dirb/common.txt
 ```
+
+**https** の場合は **-k** が必要
+
 ```
 feroxbuster -u http://shocker.htb -f -n
 feroxbuster -u http://shocker.htb/cgi-bin/ -x sh,cgi,pl
