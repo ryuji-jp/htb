@@ -62,13 +62,6 @@ dirb http://10.10.10.56/cgi-bin/ -X .sh,.pl,.txt,.php,.py
 ```
 wpscan --url https://brainfuck.htb --disable-tls-checks
 ```
-
-### searchsploit 詳細表示
-
-```
-searchsploit -x 41006.txt
-```
-
 ### Word Press username 列挙
 ```
 wpscan --url https://brainfuck.htb --disable-tls-checks --enumerate u
@@ -85,6 +78,11 @@ https://brainfuck.htb/wp-admin/
 ### searchsploit
 ```
 searchsploit wordpress plugin wp support
+```
+
+### searchsploit 詳細表示
+```
+searchsploit -x 41006.txt
 ```
 
 ### sudo -l
