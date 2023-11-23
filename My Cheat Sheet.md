@@ -12,6 +12,13 @@ nmap -sC -sV -O -v -oV 10.10.10.17
 
 https://muchipopo.com/ctf/cheatsheet-oscp/
 
+### AutoRecon
+```
+┌──(kali㉿kali)-[~/Documents/Beep]
+└─$ python3 ../AutoRecon/autorecon.py 10.10.10.7 
+
+```
+
 ## http/https 
 
 ### http 探索
