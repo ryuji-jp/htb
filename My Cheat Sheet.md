@@ -75,7 +75,7 @@ https://brainfuck.htb/wp-admin/
 
 ## exploit code 
 
-### searchsploit
+### searchsploit 検索
 ```
 searchsploit wordpress plugin wp support
 ```
