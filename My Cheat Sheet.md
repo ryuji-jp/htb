@@ -122,9 +122,6 @@ listening on [any] 8443 ...
 
 ## Tips
 
-### AutoRecon
-https://github.com/Tib3rius/AutoRecon
-
 ### reverse_shells
 https://gist.github.com/sckalath/67a59eb4955f1f9aedde
 
