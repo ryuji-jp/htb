@@ -20,6 +20,23 @@ https://muchipopo.com/ctf/cheatsheet-oscp/
 
 https://github.com/Tib3rius/AutoRecon
 
+### ssh
+ssh でエラーが出る場合  
+/etc/ssh/ssh_config  
+
+```
+HOST *
+KexAlgorithms +diffie-hellman-group1-sha1,diffie-hellman-group14-sha1
+IgnoreUnknown UseKeychain,AddKeysToAgent
+UseKeychain yes
+AddKeysToAgent yes
+Ciphers +3des-cbc,aes128-cbc,aes192-cbc,aes256-cbc
+StrictHostKeyChecking no
+UserKnownHostsFile /dev/null
+HostKeyAlgorithms ssh-dss,ssh-rsa
+PubkeyAcceptedAlgorithms +ssh-rsa
+```
+
 ## http/https 
 
 ### http 探索
