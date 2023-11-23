@@ -1,4 +1,4 @@
-# Lame
+# Beep
 https://app.hackthebox.com/machines/5
 
 # Workthrough
