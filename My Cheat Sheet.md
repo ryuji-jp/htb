@@ -80,7 +80,7 @@ dirb http://10.10.10.56/cgi-bin/ -X .sh,.pl,.txt,.php,.py
 ## SQLi
 
 ログイン画面で利用  
-ユーザ名、パスワードに **'or'1'='1** を利用  
+ユーザ名、パスワードに **admin'or'1'='1** を利用  
 
 ### WordPress
 ```
