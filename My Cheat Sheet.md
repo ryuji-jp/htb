@@ -36,6 +36,26 @@ UserKnownHostsFile /dev/null
 HostKeyAlgorithms ssh-dss,ssh-rsa
 PubkeyAcceptedAlgorithms +ssh-rsa
 ```
+## DNS 53
+
+```
+└─$ dig axfr cronos.htb @10.10.10.13
+
+; <<>> DiG 9.18.16-1-Debian <<>> axfr cronos.htb @10.10.10.13
+;; global options: +cmd
+cronos.htb.             604800  IN      SOA     cronos.htb. admin.cronos.htb. 3 604800 86400 2419200 604800
+cronos.htb.             604800  IN      NS      ns1.cronos.htb.
+cronos.htb.             604800  IN      A       10.10.10.13
+admin.cronos.htb.       604800  IN      A       10.10.10.13
+ns1.cronos.htb.         604800  IN      A       10.10.10.13
+www.cronos.htb.         604800  IN      A       10.10.10.13
+cronos.htb.             604800  IN      SOA     cronos.htb. admin.cronos.htb. 3 604800 86400 2419200 604800
+;; Query time: 235 msec
+;; SERVER: 10.10.10.13#53(10.10.10.13) (TCP)
+;; WHEN: Fri Dec 08 21:28:42 EST 2023
+;; XFR size: 7 records (messages 1, bytes 203)
+
+```
 
 ## http/https 
 
