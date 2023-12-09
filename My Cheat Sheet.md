@@ -37,7 +37,6 @@ HostKeyAlgorithms ssh-dss,ssh-rsa
 PubkeyAcceptedAlgorithms +ssh-rsa
 ```
 ## dns 53
-
 ```
 └─$ dig axfr cronos.htb @10.10.10.13
 
@@ -154,3 +153,7 @@ https://gist.github.com/sckalath/67a59eb4955f1f9aedde
 ### Reverse Shell Generator
 https://www.revshells.com/
 
+### ハッシュ解読
+```
+john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
+```
