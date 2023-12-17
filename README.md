@@ -31,3 +31,6 @@ https://crackstation.net/
 
 ## Reverse Shell Cheat Sheet
 https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md#bash-tcp
+
+## Mac インストール方法
+https://www.kali.org/docs/virtualization/install-vmware-silicon-host/
