@@ -270,7 +270,7 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2023-12-16 03:24:
 
 ### kali から windows RDP
 ```
-xfreerdp /u:username /p:password /v:192.168.1.1
+xfreerdp /u:student /p:lab /v:192.168.206.152
 ```
 ### grep
 下5行表示
