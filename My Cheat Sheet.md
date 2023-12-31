@@ -286,3 +286,10 @@ grep -B 5 -n kitaura smb.conf　
 ### Mac キーボード 設定
 command -> caps lock 無効化
 <img width="814" alt="image" src="https://github.com/ryuji-jp/htb/assets/61535783/b368a2ee-f314-485a-a892-9a0e42749f7f">
+
+### nc
+```
+-z: このオプションは、接続を確立せずにスキャンするために使用されます。
+-v: 冗長オプションはスキャン結果を出力します。
+-n: このオプションは、DNS ルックアップと警告をスキップするために使用されます。
+```
