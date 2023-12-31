@@ -11,6 +11,10 @@ nmap -sC -sV -O -v -oV 10.10.10.17
 ```
 sudo nmap -sU --open -p 161 192.168.50.1-254 -oG open-snmp.txt
 ```
+脆弱性スキャン
+```
+nmap -sV --script vuln 10.10.10.1
+```
 
 ### nmap tips
 
