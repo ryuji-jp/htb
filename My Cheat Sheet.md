@@ -7,6 +7,10 @@
 ```
 nmap -sC -sV -O -v -oV 10.10.10.17
 ```
+複数の ip レンジ and open status のスキャン
+```
+sudo nmap -sU --open -p 161 192.168.50.1-254 -oG open-snmp.txt
+```
 
 ### nmap tips
 
