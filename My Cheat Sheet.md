@@ -261,3 +261,13 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2023-12-16 03:24:
 ```
 xfreerdp /u:username /p:password /v:192.168.1.1
 ```
+### grep
+下5行表示
+```
+grep -A 5 -n kitaura smb.conf
+```
+
+上5行表示
+```
+grep -B 5 -n kitaura smb.conf　
+```
