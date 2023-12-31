@@ -256,3 +256,8 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2023-12-16 03:23:
 1 of 1 target successfully completed, 1 valid password found
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2023-12-16 03:24:38
 ```
+
+### kali から windows RDP
+```
+xfreerdp /u:username /p:password /v:192.168.1.1
+```
