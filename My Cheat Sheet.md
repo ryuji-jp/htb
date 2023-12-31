@@ -7,6 +7,10 @@
 ```
 nmap -sC -sV -O -v -oV 10.10.10.17
 ```
+### windows でポートスキャン
+```
+1..1024 | % {echo ((New-Object Net.Sockets.TcpClient).Connect("192.168.206.151", $_)) "TCP port $_ is open"} 2>$null
+```
 
 ### nmap tips
 
