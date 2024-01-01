@@ -302,3 +302,6 @@ command -> caps lock 無効化
 -v: 冗長オプションはスキャン結果を出力します。
 -n: このオプションは、DNS ルックアップと警告をスキップするために使用されます。
 ```
+
+### BurpSuite インストール
+https://qiita.com/natsuki7293/items/74ab17ad3ad1d8a8ec3d
