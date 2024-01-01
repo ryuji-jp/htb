@@ -304,4 +304,7 @@ command -> caps lock 無効化
 ```
 
 ### BurpSuite インストール
+インストール方法
 https://qiita.com/natsuki7293/items/74ab17ad3ad1d8a8ec3d
+ダウンロードサイト
+https://portswigger.net/burp/releases/professional-community-2023-10-1-1?requestededition=professional&requestedplatform=
