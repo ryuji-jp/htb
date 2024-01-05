@@ -215,6 +215,12 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 mysql> 
 ```
+ID:root/PW:root の場合
+```
+┌──(rnozaka㉿kali)-[~/Documents]
+└─$ mysql -u root -p'root' -h 192.168.248.16 -P 3306
+```
+
 一覧表示
 ```
 mysql> show databases;
