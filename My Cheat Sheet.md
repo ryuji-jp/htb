@@ -171,6 +171,9 @@ listening on [any] 8443 ...
 
 ## Tips
 
+### URL エンコーディング
+https://www.w3schools.com/tags/ref_urlencode.asp
+
 ### reverse_shells
 https://gist.github.com/sckalath/67a59eb4955f1f9aedde
 
