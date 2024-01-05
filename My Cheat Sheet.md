@@ -259,6 +259,23 @@ mysql> select * from users;
 +----+----------+----------------------------------+
 1 row in set (0.00 sec)
 ```
+
+windows の場合の接続方法
+```
+kali@kali:~$ impacket-mssqlclient Administrator:Lab123@192.168.50.18 -windows-auth
+Impacket v0.9.24 - Copyright 2021 SecureAuth Corporation
+
+[*] Encryption required, switching to TLS
+[*] ENVCHANGE(DATABASE): Old Value: master, New Value: master
+[*] ENVCHANGE(LANGUAGE): Old Value: , New Value: us_english
+[*] ENVCHANGE(PACKETSIZE): Old Value: 4096, New Value: 16192
+[*] INFO(SQL01\SQLEXPRESS): Line 1: Changed database context to 'master'.
+[*] INFO(SQL01\SQLEXPRESS): Line 1: Changed language setting to us_english.
+[*] ACK: Result: 1 - Microsoft SQL Server (150 7208)
+[!] Press help for extra shell commands
+SQL>
+```
+
 ### ブルートフォース
 ***http***
 ```
