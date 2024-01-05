@@ -183,6 +183,14 @@ https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
 ### Reverse Shell Generator
 https://www.revshells.com/
 
+### which
+リバースシェルで対象サーバで使えるコマンドを確認するコマンド
+```
+┌──(rnozaka㉿kali)-[~/Documents]
+└─$ which nc
+/usr/bin/nc
+```
+
 ### ハッシュ解読
 ```
 john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
