@@ -346,3 +346,14 @@ listening on [any] 8443 ...
 https://qiita.com/natsuki7293/items/74ab17ad3ad1d8a8ec3d  
 ダウンロードサイト  
 https://portswigger.net/burp/releases/professional-community-2023-10-1-1?requestededition=professional&requestedplatform=  
+
+### pwsh インストール
+```
+% brew install --cask powershell  
+<中略>
+installer: Package name is PowerShell - 7.2.1
+installer: Installing at base path /
+installer: The install was successful.
+🍺  powershell was successfully installed!
+```
+https://note.com/iboy1204/n/n99f2994e8f96
