@@ -360,3 +360,6 @@ installer: The install was successful.
 🍺  powershell was successfully installed!
 ```
 https://note.com/iboy1204/n/n99f2994e8f96
+
+### ターミナル ホスト名非表示
+https://qiita.com/kaito_program/items/e6a6013b1f614eed1960
