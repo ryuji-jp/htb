@@ -363,3 +363,7 @@ https://note.com/iboy1204/n/n99f2994e8f96
 
 ### ターミナル ホスト名非表示
 https://qiita.com/kaito_program/items/e6a6013b1f614eed1960
+
+### RDP した Windows と Kali との共有
+
+https://www.linkedin.com/pulse/transfer-files-from-windows-kali-julio-sanchez
