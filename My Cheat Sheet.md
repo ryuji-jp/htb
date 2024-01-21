@@ -397,3 +397,13 @@ https://www.linkedin.com/pulse/transfer-files-from-windows-kali-julio-sanchez
 └─$ python3 ~/Documents/impacket/examples/smbserver.py -smb2support myshare2 .  
 Impacket v0.11.0 - Copyright 2023 Fortra
 ```
+
+### Hashcat
+https://qiita.com/labpixel/items/881103da50cd725b6254
+
+```
+kali@kali:~/passwordattacks$ hashcat -m 13400 keepass.hash /usr/share/wordlists/rockyou.txt -r /usr/share/hashcat/rules/rockyou-30000.rule -- force
+hashcat (v6.2.5) starting
+... $keepass$*2*60*0*d74e29a727e9338717d27a7d457ba3486d20dec73a9db1a7fbc7a068c9aec6bd*04b0 bfd787898d8dcd4d463ee768e55337ff001ddfac98c961219d942fb0cfba*5273cc73b9584fbd843d1ee30 9d2ba47*1dcad0a3e50f684510c5ab14e1eecbb63671acae14a77eff9aa319b63d71ddb9*17c3ebc9c4c35 35689cb9cb501284203b7c66b0ae2fbf0c2763ee920277496c1:qwertyuiop123!
+...
+```
