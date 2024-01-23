@@ -368,6 +368,19 @@ listening on [any] 8443 ...
 -n: このオプションは、DNS ルックアップと警告をスキップするために使用されます。
 ```
 
+対象 VM へファイルを送る方法  
+受信側
+```
+joe@debian-privesc:~$ nc -nlvp 4433 > unix-privesc-check
+listening on [any] 4433 ...
+connect to [192.168.191.214] from (UNKNOWN) [192.168.45.223] 44002
+```
+送信側
+```
+└─$ nc -nv 192.168.191.214  4433 < /usr/bin/unix-privesc-check
+(UNKNOWN) [192.168.191.214] 4433 (?) open
+```
+
 ### BurpSuite インストール
 インストール方法  
 https://qiita.com/natsuki7293/items/74ab17ad3ad1d8a8ec3d  
