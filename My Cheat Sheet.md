@@ -420,3 +420,8 @@ hashcat (v6.2.5) starting
 ... $keepass$*2*60*0*d74e29a727e9338717d27a7d457ba3486d20dec73a9db1a7fbc7a068c9aec6bd*04b0 bfd787898d8dcd4d463ee768e55337ff001ddfac98c961219d942fb0cfba*5273cc73b9584fbd843d1ee30 9d2ba47*1dcad0a3e50f684510c5ab14e1eecbb63671acae14a77eff9aa319b63d71ddb9*17c3ebc9c4c35 35689cb9cb501284203b7c66b0ae2fbf0c2763ee920277496c1:qwertyuiop123!
 ...
 ```
+### find
+ファイルの中身の文字列を検索する  
+```
+find [検索対象フォルダのパス] -type f -print | xargs grep '[検索したい文字列]'
+```
