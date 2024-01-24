@@ -424,4 +424,5 @@ hashcat (v6.2.5) starting
 ファイルの中身の文字列を検索する  
 ```
 find [検索対象フォルダのパス] -type f -print | xargs grep '[検索したい文字列]'
+find / -type f -print | xargs grep "OS{" 2> /dev/null
 ```
