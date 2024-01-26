@@ -414,6 +414,9 @@ Impacket v0.11.0 - Copyright 2023 Fortra
 ### Hashcat
 https://qiita.com/labpixel/items/881103da50cd725b6254
 
+-m XXX の数字の確認方法  
+https://hashcat.net/wiki/doku.php?id=example_hashes
+
 ```
 kali@kali:~/passwordattacks$ hashcat -m 13400 keepass.hash /usr/share/wordlists/rockyou.txt -r /usr/share/hashcat/rules/rockyou-30000.rule -- force
 hashcat (v6.2.5) starting
