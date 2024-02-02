@@ -342,6 +342,9 @@ kali@kali:~$ hydra -L /usr/share/wordlists/dirb/others/names.txt -p "SuperS3cure
 ```
 xfreerdp /u:student /p:lab /v:192.168.206.152
 ```
+```
+xfreerdp /u:stephanie /d:corp.com /v:192.168.50.75
+```
 ### grep
 下5行表示
 ```
