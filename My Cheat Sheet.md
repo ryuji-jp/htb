@@ -432,3 +432,17 @@ hashcat (v6.2.5) starting
 find [検索対象フォルダのパス] -type f -print | xargs grep '[検索したい文字列]'
 find / -type f -print | xargs grep "OS{" 2> /dev/null
 ```
+### Power shell
+
+```
+PS C:\Tools> powershell -ep bypass
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Tools>
+PS C:\Tools> .\PowerView.ps1
+PS C:\Tools> Import-Module .\PowerView.ps1
+PS C:\Tools>
+```
