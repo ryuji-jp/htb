@@ -100,6 +100,11 @@ feroxbuster -u http://shocker.htb/cgi-bin/ -x sh,cgi,pl
 ```
 dirb http://10.10.10.56/cgi-bin/ -X .sh,.pl,.txt,.php,.py
 ```
+
+```
+└─$ whatweb http://192.168.213.121
+http://192.168.213.121 [200 OK] ASP_NET[4.0.30319], Bootstrap, Country[RESERVED][ZZ], HTML5, HTTPServer[Microsoft-IIS/10.0], IP[192.168.213.121], JQuery[1.12.4], Meta-Author[Offensive Security], Microsoft-IIS[10.0], Modernizr[3.5.0.min], Script, Title[MedTech][Title element contains newline(s)!], X-Powered-By[ASP.NET], X-UA-Compatible[ie=edge]
+```
 ## SQLi
 
 ログイン画面で利用  
