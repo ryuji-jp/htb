@@ -465,10 +465,17 @@ hashcat (v6.2.5) starting
 ```
 ### find
 ファイルの中身の文字列を検索する  
+Linux  
 ```
 find [検索対象フォルダのパス] -type f -print | xargs grep '[検索したい文字列]'
 find / -type f -print | xargs grep "OS{" 2> /dev/null
 ```
+Windows  
+```
+C:\Windows\system32>where /r c:\ local.txt
+where /r c:\ local.txt
+```
+
 ### Power shell
 
 ```
