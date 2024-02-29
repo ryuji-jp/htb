@@ -400,6 +400,10 @@ xfreerdp /u:student /p:lab /v:192.168.206.152
 ```
 xfreerdp /u:stephanie /d:corp.com /v:192.168.50.75
 ```
+```
+proxychains -q xfreerdp /d:medtech.com /u:yoshi '/p:Mushroom!' /v:172.16.247.82 /cert-ignore
+```
+
 ### grep
 下5行表示
 ```
