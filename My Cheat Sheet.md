@@ -416,7 +416,7 @@ grep -B 5 -n kitaura smb.conf　
 ```
 
 ### Mac キーボード 設定
-command -> caps lock 無効化
+command -> caps lock 無効化  
 <img width="551" alt="image" src="https://github.com/ryuji-jp/htb/assets/61535783/ec1842a3-90f4-416f-ad93-954434170366">
 
 ### nc
