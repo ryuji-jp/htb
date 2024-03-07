@@ -499,6 +499,11 @@ https://www.linkedin.com/pulse/transfer-files-from-windows-kali-julio-sanchez
 └─$ python3 ~/Documents/impacket/examples/smbserver.py -smb2support myshare2 .  
 Impacket v0.11.0 - Copyright 2023 Fortra
 ```
+### tcpdump
+ssh 除外  
+```
+sudo tcpdump -i ens192 not port 2222
+```
 
 ### Hashcat
 https://qiita.com/labpixel/items/881103da50cd725b6254
