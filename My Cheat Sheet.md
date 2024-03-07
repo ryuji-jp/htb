@@ -49,6 +49,33 @@ UserKnownHostsFile /dev/null
 HostKeyAlgorithms ssh-dss,ssh-rsa
 PubkeyAcceptedAlgorithms +ssh-rsa
 ```
+ssh の鍵にパスワードがあった場合の解析方法
+
+```
+┌──(rnozaka㉿rnozaka)-[~/Documents/Callenge2]
+└─$ ssh -p 2222 -i hash.txt anita@192.168.216.245
+Enter passphrase for key 'hash.txt': 
+```
+
+```
+┌──(rnozaka㉿rnozaka)-[~/Documents/Callenge2]
+└─$ ssh2john hash.txt > hash_john.txt
+                                                                                                                                    
+┌──(rnozaka㉿rnozaka)-[~/Documents/Callenge2]
+└─$ john --wordlist=/usr/share/wordlists/rockyou.txt hash_john.txt
+Created directory: /home/rnozaka/.john
+Using default input encoding: UTF-8
+Loaded 1 password hash (SSH, SSH private key [RSA/DSA/EC/OPENSSH 32/64])
+Cost 1 (KDF/cipher [0=MD5/AES 1=MD5/3DES 2=Bcrypt/AES]) is 2 for all loaded hashes
+Cost 2 (iteration count) is 16 for all loaded hashes
+Will run 4 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+fireball         (hash.txt)     
+1g 0:00:02:20 DONE (2024-03-07 18:59) 0.007142g/s 29.25p/s 29.25c/s 29.25C/s mom123..oooooo
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed. 
+```
+
 ## dns 53
 ```
 └─$ dig axfr cronos.htb @10.10.10.13
