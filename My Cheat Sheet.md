@@ -158,6 +158,16 @@ wpscan --url https://brainfuck.htb --disable-tls-checks --enumerate u
 https://brainfuck.htb/wp-admin/
 ```
 
+## SMB
+ダウンロード
+```
+smbclient '//192.168.239.248/Users' -N -c 'prompt OFF;recurse ON;mget *'
+```
+接続
+```
+smbclient //192.168.239.248/transfer -U guest
+```
+
 ## exploit code 
 
 ### searchsploit 検索
