@@ -163,9 +163,15 @@ https://brainfuck.htb/wp-admin/
 ```
 smbclient '//192.168.239.248/Users' -N -c 'prompt OFF;recurse ON;mget *'
 ```
+
 接続
 ```
 smbclient //192.168.239.248/transfer -U guest
+```
+
+探索
+```
+enum4linux -u 'guest' -p '' -a 192.168.239.248
 ```
 
 ## exploit code 
