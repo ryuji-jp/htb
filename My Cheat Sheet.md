@@ -614,3 +614,9 @@ Then you should get on kali to enumerate further
 dll ハイジャックなどでユーザを作成したときは、ローカルユーザとなる。
 その状態で Admin になろうとするとドメインが指定されている場合がある。
 ユーザ名を **".\dame"** と指定することでローカルユーザとなる。
+
+### zip
+```
+┌──(rnozaka㉿rnozaka)-[~/Documents/OSCP_A]
+└─$  7z e sitebackup3.zip 
+```
