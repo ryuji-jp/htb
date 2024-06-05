@@ -638,3 +638,5 @@ socks5 127.0.0.1 1080
 ```
 proxychains -q nmap 10.10.174.140
 ```
+参考
+https://scrapbox.io/rex/Pivoting_with_chisel
