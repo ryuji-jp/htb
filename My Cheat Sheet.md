@@ -636,7 +636,7 @@ socks5 127.0.0.1 1080
 ```
 実行コマンド
 ```
-proxychains -q nmap 10.10.174.140
+proxychains nmap --top-port 20 -sT 10.10.100.150
 ```
 ```
 curl -x socks5://127.0.0.1:1080 http://www.lolcats.com
