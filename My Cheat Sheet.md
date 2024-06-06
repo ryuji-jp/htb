@@ -305,6 +305,17 @@ https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
 ### Reverse Shell Generator
 https://www.revshells.com/
 
+### リバースシェル
+kali 側
+```
+└─$ nc -lvnp 4444  
+```
+Windows  
+https://podalirius.net/fr/articles/windows-reverse-shells-cheatsheet/
+
+nc  
+https://github.com/int0x33/nc.exe/
+
 ### which
 リバースシェルで対象サーバで使えるコマンドを確認するコマンド
 ```
