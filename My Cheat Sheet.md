@@ -173,6 +173,11 @@ smbclient //192.168.239.248/transfer -U guest
 ```
 enum4linux -u 'guest' -p '' -a 192.168.239.248
 ```
+## TCP/5985
+https://qiita.com/v_avenger/items/78b323d5e30276a20735
+```
+Evil-WinRMツールは、WinRMサービスが有効（通常は5985/tcpで応答）かつ、資格情報とアクセス許可がある場合に使用することのできるリモートシェルプログラムです。
+```
 
 ## exploit code 
 
