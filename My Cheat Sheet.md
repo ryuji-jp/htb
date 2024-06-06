@@ -484,7 +484,7 @@ listening on [any] 8443 ...
 -n: このオプションは、DNS ルックアップと警告をスキップするために使用されます。
 ```
 
-対象 VM へファイルを送る方法  
+### 対象 VM へファイルを送る方法  
 受信側
 ```
 joe@debian-privesc:~$ nc -nlvp 4433 > unix-privesc-check
@@ -652,8 +652,7 @@ proxychains nmap --top-port 20 -sT 10.10.100.150
 ```
 curl -x socks5://127.0.0.1:1080 http://www.lolcats.com
 ```
-参考
-https://scrapbox.io/rex/Pivoting_with_chisel
+参考: https://scrapbox.io/rex/Pivoting_with_chisel
 
 ### ファイル転送
 Windows 側
