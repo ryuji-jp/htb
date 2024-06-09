@@ -303,6 +303,12 @@ faile 検索
 ```
 Get-ChildItem -Path C:\windows.old -Include *.txt,*.ini,*.kdbx -File -Recurse -ErrorAction SilentlyContinue
 ```
+SAM SYSYTEM hash
+https://github.com/tagnullde/OSCP/blob/master/oscp-cheatsheet.md
+```
+┌──(rnozaka㉿rnozaka)-[~/Documents/OSCP_A]
+└─$ samdump2 SYSTEM SAM > SAM.hash
+```
 
 ## Tips
 
