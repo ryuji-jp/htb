@@ -299,6 +299,10 @@ Install the latest PowerShell for new features and improvements! https://aka.ms/
 PS C:\Windows\system32> whoami whoami
 nt authority\system
 ```
+faile 検索
+```
+Get-ChildItem -Path C:\windows.old -Include *.txt,*.ini,*.kdbx -File -Recurse -ErrorAction SilentlyContinue
+```
 
 ## Tips
 
