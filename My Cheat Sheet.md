@@ -15,6 +15,10 @@ sudo nmap -sU --open -p 161 192.168.50.1-254 -oG open-snmp.txt
 ```
 nmap -sV --script vuln 10.10.10.1
 ```
+chisel 利用時
+```
+proxychains nmap --top-port 20 -sT 10.10.100.150
+```
 
 ### nmap tips
 
