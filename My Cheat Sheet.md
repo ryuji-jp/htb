@@ -840,4 +840,5 @@ Impacket v0.11.0 - Copyright 2023 Fortra
 [*] Config file parsed
 [*] Config file parsed
 ```
-
+Web側  
+<img width="652" alt="image" src="https://github.com/ryuji-jp/htb/assets/61535783/0272f318-b391-4868-a4e6-2c8b8e3631bb">
