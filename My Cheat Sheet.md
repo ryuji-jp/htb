@@ -283,7 +283,11 @@ C:\Windows\system32> whoami nt authority\system
 ```
 
 ## Windows Privilege Escalation
-
+ファイル調査
+```
+Get-ChildItem -Path C:\ -Include *.txt,*.ini,SAM -File -Recurse -ErrorAction SilentlyContinue
+```
+エスカレーション確認
 ```
 oscp\web_svc@MS01 C:\Users\web_svc>whoami /priv
 
