@@ -883,3 +883,4 @@ kali@kali:~$ locate cmdasp
 /usr/share/webshells/asp/cmdasp.asp
 /usr/share/webshells/aspx/cmdasp.aspx
 ```
+<img width="760" alt="image" src="https://github.com/ryuji-jp/htb/assets/61535783/313de5ce-e4c6-4efc-be6d-b937245276f3">
