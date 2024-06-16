@@ -38,6 +38,15 @@ https://muchipopo.com/ctf/cheatsheet-oscp/
 https://github.com/Tib3rius/AutoRecon
 
 ## ssh
+ssh key を使う場合  
+chmod 600 id_rsa が必要  
+```
+┌──(rnozaka㉿rnozaka)-[~/Documents/OSCP_A/nc.exe/snmp-shell]
+└─$ ssh -i id_rsa john@192.168.248.149 
+Last login: Tue Nov 22 08:31:27 2022 from 192.168.118.3
+john@oscp:~$ 
+```
+
 ssh でエラーが出る場合  
 ```/etc/ssh/ssh_config```  
 
