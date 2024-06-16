@@ -113,6 +113,24 @@ IP address       NetBIOS Name     Server    User             MAC address
 
 ## SNMP 161/UDP
 https://book.hacktricks.xyz/network-services-pentesting/pentesting-snmp
+```
+┌──(rnozaka㉿rnozaka)-[~/Documents/OSCP_A/nc.exe/snmp-shell]
+└─$ snmpwalk -c public -v1 -t 10 192.168.248.149 NET-SNMP-EXTEND-MIB::nsExtendObjects
+NET-SNMP-EXTEND-MIB::nsExtendNumEntries.0 = INTEGER: 1
+NET-SNMP-EXTEND-MIB::nsExtendCommand."RESET" = STRING: ./home/john/RESET_PASSWD
+NET-SNMP-EXTEND-MIB::nsExtendArgs."RESET" = STRING: 
+NET-SNMP-EXTEND-MIB::nsExtendInput."RESET" = STRING: 
+NET-SNMP-EXTEND-MIB::nsExtendCacheTime."RESET" = INTEGER: 5
+NET-SNMP-EXTEND-MIB::nsExtendExecType."RESET" = INTEGER: exec(1)
+NET-SNMP-EXTEND-MIB::nsExtendRunType."RESET" = INTEGER: run-on-read(1)
+NET-SNMP-EXTEND-MIB::nsExtendStorage."RESET" = INTEGER: permanent(4)
+NET-SNMP-EXTEND-MIB::nsExtendStatus."RESET" = INTEGER: active(1)
+NET-SNMP-EXTEND-MIB::nsExtendOutput1Line."RESET" = STRING: Resetting password of kiero to the default value <<< メッセージ
+NET-SNMP-EXTEND-MIB::nsExtendOutputFull."RESET" = STRING: Resetting password of kiero to the default value
+NET-SNMP-EXTEND-MIB::nsExtendOutNumLines."RESET" = INTEGER: 1
+NET-SNMP-EXTEND-MIB::nsExtendResult."RESET" = INTEGER: 0
+NET-SNMP-EXTEND-MIB::nsExtendOutLine."RESET".1 = STRING: Resetting password of kiero to the default value
+```
 
 ## http/https 
 
