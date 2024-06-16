@@ -111,6 +111,9 @@ IP address       NetBIOS Name     Server    User             MAC address
 192.168.50.134   SAMBAWEB         <server>  SAMBAWEB         00:00:00:00:00:00
 ```
 
+## SNMP 161/UDP
+https://book.hacktricks.xyz/network-services-pentesting/pentesting-snmp
+
 ## http/https 
 
 ### http 探索
