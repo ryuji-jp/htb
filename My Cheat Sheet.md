@@ -919,4 +919,8 @@ kali@kali:~$ locate cmdasp
 
 https://4pfsec.com/ligolo
 
-
+```
+ligolo-ng » session
+? Specify a session : 1 - #1 - OSCP\web_svc@MS01 - 192.168.218.147:56883
+[Agent : OSCP\web_svc@MS01] » listener_add --addr 0.0.0.0:11601 --to 127.0.0.1:11601 --tcp
+```
