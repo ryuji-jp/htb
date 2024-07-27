@@ -9,6 +9,9 @@ https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20an
 ## oscp-prep 
 https://github.com/camercu/oscp-prep
 
+## Example Cheat Sheet 
+https://github.com/xsudoxx/OSCP
+
 ## CHEATSHEET.md
 https://github.com/camercu/oscp-prep/blob/main/CHEATSHEET.md
 
