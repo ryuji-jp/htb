@@ -12,9 +12,6 @@ https://github.com/camercu/oscp-prep
 ## Example Cheat Sheet 
 https://github.com/xsudoxx/OSCP
 
-## CHEATSHEET.md
-https://github.com/camercu/oscp-prep/blob/main/CHEATSHEET.md
-
 ## OSCP Cheat Sheet
 https://github.com/0xsyr0/OSCP
 
